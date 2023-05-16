@@ -1,7 +1,7 @@
 const nameInput = document.querySelector('#name-input');
 const nameOutput = document.querySelector('#name-output');
 
-const USER = "Anonymous";
+const DEFAULT_USER = "Anonymous";
 
 nameInput.addEventListener('input', (e) => {
   if (e.currentTarget.value !== "") {
@@ -10,3 +10,5 @@ nameInput.addEventListener('input', (e) => {
     nameOutput.textContent = DEFAULT_USER;
   }
 });
+
+
